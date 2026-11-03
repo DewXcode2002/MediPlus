@@ -220,7 +220,7 @@ async function seed() {
           },
         });
       }
-    });
+    }, { timeout: 120000 });
 
     console.log('✓ PostgreSQL database successfully populated with MediPlus demo records.');
   } else {
